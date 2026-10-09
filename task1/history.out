@@ -1,0 +1,6 @@
+    1  ip a
+    2  hostname
+    3  sudo hostnamectl set-hostname mephi-2026.domain.local
+    4  sudo nano /etc/hosts
+    5  hostname
+    6  ping -c 4 8.8.8.8 

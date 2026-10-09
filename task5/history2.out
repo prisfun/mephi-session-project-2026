@@ -1,0 +1,6 @@
+    1  sudo -u user1 tcpdump
+    2  which tcpdump
+    3  getcap /usr/sbin/tcpdump
+    4  sudo setcap 'cap_net_raw,cap_net_admin+ep' /usr/sbin/tcpdump
+    5  getcap /usr/sbin/tcpdump
+    6  sudo -u user1 tcpdump

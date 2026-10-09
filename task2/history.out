@@ -1,0 +1,5 @@
+    1  sudo dnf upgrade -y
+    2  sudo dnf install -y nginx libcap-ng-utils
+    3  dnf download --destdir /tmp tcpdump
+    4  sudo rpm -iv /tmp/tcpdump-4.99.5-1.red80.x86_64.rpm
+    5  tcpdump --version

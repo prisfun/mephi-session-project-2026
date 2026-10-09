@@ -1,0 +1,14 @@
+    1  lsblk
+    2  ls -l /dev/sdb
+    3  sudo fdisk /dev/sdb
+    4  lsblk -f /dev/sdb
+    5  lsblk
+    6  sudo mkfs.ext4 -L "MEPHI_WEB" /dev/sdb1
+    7  lsblk -f /dev/sdb
+    8  ls -la /mnt/
+    9  sudo mkdir /mephi-web
+   10  ls -la
+   11  sudo nano /etc/fstab
+   12  sudo mount -L MEPHI_WEB /mephi-web/
+   13  systemctl daemon-reload
+   14  df -h /mephi-web/

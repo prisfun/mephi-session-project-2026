@@ -1,0 +1,23 @@
+    1  sudo mkdir -p /data/mephi-2026
+    2  sudo grep -E 'devs|curators' /etc/group
+    3  sudo groupadd -g 4444 curators
+    4  sudo useradd -g curators curator1
+    5  sudo useradd -g curators curator2
+    6  sudo grep -E 'devs|curators' /etc/group
+    7  sudo groupadd -g 5500 devs
+    8  sudo grep -E 'devs|curators' /etc/group
+    9  sudo useradd -u 5501 -g devs user1
+   10  sudo useradd -u 5502 -g devs user2
+   11  sudo useradd -u 5503 -g devs user3
+   12  sudo grep -E 'user[1-3]|curator' /etc/passwd
+   13  ls -la /data/mephi-2026/
+   14  ls -ld /data/mephi-2026/
+   15  sudo chown root:devs /data/mephi-2026/
+   16  ls -ld /data/mephi-2026/
+   17  sudo chmod 2770 /data/mephi-2026/
+   18  ls -ld /data/mephi-2026/
+   19  sudo setfacl -m g:curators:r-x /data/mephi-2026/
+   20  sudo setfacl -d -m g:curators:r-x /data/mephi-2026/
+   21  sudo setfacl -d -m g:devs:rwx /data/mephi-2026/
+   22  sudo setfacl -d -m o::--- /data/mephi-2026/
+   23  sudo getfacl /data/mephi-2026/

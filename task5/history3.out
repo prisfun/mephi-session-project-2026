@@ -1,0 +1,9 @@
+    1  getenforce
+    2  ls -Zd /mephi-web/
+    3  ls -Z /mephi-web/
+    4  sudo semanage fcontext -a -t httpd_sys_content_t "/mephi-web(/.*)?"
+    5  sudo restorecon -R -v /mephi-web
+    6  ls -Zd /mephi-web/
+    7  ls -Z /mephi-web/
+    8  sudo nano /etc/nginx/nginx.conf
+    9  sudo systemctl restart nginx

@@ -1,0 +1,4 @@
+    1  echo "Hello from student: 373013" | sudo tee /mephi-web/index.html
+    2  ls -Z /mephi-web/
+    3  cat /mephi-web/index.html
+    4  curl http://localhost

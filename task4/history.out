@@ -1,0 +1,4 @@
+    1  sudo systemctl enable nginx
+    2  sudo systemctl start nginx
+    3  sudo systemctl status nginx
+    4  sudo journalctl -u nginx -b 0
